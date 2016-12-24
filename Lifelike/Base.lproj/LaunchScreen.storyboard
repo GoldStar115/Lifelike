@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="EAO-jY-nO3">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="5Z9-lO-wGm">
+                                <rect key="frame" x="220" y="126" width="160" height="148"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="QGw-Qp-UQH"/>
+                                    <constraint firstAttribute="width" secondItem="5Z9-lO-wGm" secondAttribute="height" multiplier="162:149" id="uH1-KT-G14"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5Z9-lO-wGm" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6F1-xN-wJm"/>
+                            <constraint firstItem="5Z9-lO-wGm" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-100" id="8Ex-dt-LWA"/>
+                            <constraint firstItem="EAO-jY-nO3" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="Ded-af-B1h"/>
+                            <constraint firstItem="EAO-jY-nO3" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="Rzr-vZ-5b5"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="EAO-jY-nO3" secondAttribute="bottom" id="hrb-KL-oXc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EAO-jY-nO3" secondAttribute="trailing" constant="-20" id="xuu-kc-2an"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="375" height="667"/>
+        <image name="logo" width="162" height="149"/>
+    </resources>
+</document>
